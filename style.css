@@ -32,7 +32,7 @@ nav ul li a {
 
 @font-face {
   font-family: 'Sweet Raspberry'; /*a name to be used later*/
-  src: url('/fonts/Sweet Raspberry.ttf'); /*URL to font*/
+  src: url('./fonts/Sweet Raspberry.ttf'); /*URL to font*/
 }
 
 .navbar-title {
