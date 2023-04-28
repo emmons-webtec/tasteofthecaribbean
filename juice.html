@@ -1,0 +1,208 @@
+<!--
+Student Name: André Emmons
+
+Matriculation Number: 40543244
+
+Module: SET08801 2022-3 TR2 001 - Web Technologies
+
+Assignment Part: Number Two
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Beverages | A Taste Of The Caribbean</title>
+
+  <!--UTILIZING BOOTHSTRAP LIBRARY FOR STYLESHEETS AND COMPONENTS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!--LOCAL STYLESHEET-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!--UTILIZING FONT AWESOME FOR ICONS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!--Scripting languages used for animations/slideshow-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a href="/index.html" class="navbar-brand fw-bold ms-xl-3 ms-lg-3 ms-2"><img
+            style="height: 200px; width: 200px;" src="/images/Logo.jpg"></img></a>
+
+
+        <div class="navbar-title">
+          <h1 href="#" class=" navbar-main-text text-success">A Taste Of The Caribbean</h1>
+
+        </div>
+
+
+        <button class="navbar-toggler border-0 outline-0 navbar_toggler_button" data-bs-toggle="offcanvas"
+          data-bs-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="myNavbar" class="offcanvas offcanvas-end w-75">
+          <div class="container">
+            <div class="offcanvas-header">
+              <button class="btn-close border-0 outline-0 ms-auto fs-3 offcanvas_close_btn"
+                data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body justify-content-between align-items-center">
+
+              <ul class="navbar-nav">
+                <li class="nav-item ms-xl-3 ms-lg-3 ms-0">
+                  <a href="#" class="nav-link btn px-xl-3 px-md-3 btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>Search
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="nav justify-content-center navbar-expand-lg navbar-light bg-white">
+    <div class="">
+
+      <div id="myNavbar2" class="align-items-center">
+        <div class="container">
+
+          <div class=" justify-content-center align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="/index.html" class="nav-link">Home</a>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/about-us.html" class="nav-link">About Us</a>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Recipes</a>
+                <div class="dropdown-menu border-0">
+                  <a href="/beverages.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-whiskey-glass" style="color: #f54105;"></i>
+                    Beverages
+                  </a>
+                  <a href="/breakfast.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-egg" style="color: #f5d105;"></i>
+                    Breakfast
+                  </a>
+                  <a href="/dinner.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-utensils" style="color: #0dac89;"></i>
+                    Dinner
+                  </a>
+                  <a href="/lunch.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-bowl-food" style="color: #1d4ed4;"></i>
+                    Lunch
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/restaurants.html" class="nav-link">Restaurants</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/culture.html" class="nav-link">Culture</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/contact-us.html" class="nav-link ">Contact Us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- main -->
+  <main class="page">
+    <section class="recipes-container">
+      <!-- tag container -->
+      <div class="tags-container">
+        <h4>Beverages</h4>
+        <div class="tags-list">
+          <a href="/beverages.html">All Beverages</a>
+          <a href="/cocktail.html">Cocktail(4)</a>
+          <a style="font-weight: 700;" href="/juice.html">Juice (5)</a>
+          <a href="/punch.html">Punch (4)</a>
+          <a href="/tea.html">Tea (5)</a>
+        </div>
+      </div>
+      <!-- end of tag container -->
+      <!-- recipes list -->
+      <div class="recipes-list">
+        <!-- single recipe -->
+        <a href="recipes/Beverage/Juice/Ginger Beer Juice/Ginger Beer.html" class="recipe">
+          <img src="/recipes/Beverage/Juice/Ginger Beer Juice/Ginger Beer.png" class="img recipe-img" alt="" />
+          <h5>Ginger Beer Juice</h5>
+        </a>
+        <!-- end of single recipe -->
+
+        <!-- single recipe -->
+        <a href="recipes/Beverage/Juice/Golden Apple Juice/Golden Apple.html" class="recipe">
+          <img src="/recipes/Beverage/Juice/Golden Apple Juice/Golden Apple.png" class="img recipe-img" alt="" />
+          <h5>Golden Apple Juice</h5>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="/recipes/Beverage/Juice/Mauby Juice/Mauby.html" class="recipe">
+          <img src="/recipes/Beverage/Juice/Mauby Juice/Mauby.jpg" class="img recipe-img" alt="" />
+          <h5>Mauby Juice</h5>
+        </a>
+        <!-- end of single recipe -->
+
+        <!-- single recipe -->
+        <a href="/recipes/Beverage/Juice/Sorrel Juice/Sorrel Drink.html" class="recipe">
+          <img src="/recipes/Beverage/Juice/Sorrel Juice/Sorrel Drink.jpeg" class="img recipe-img" alt="" />
+          <h5>Sorrel Juice</h5>
+        </a>
+        <!-- end of single recipe -->
+
+        <!-- single recipe -->
+        <a href="/recipes/Beverage/Juice/Tamarind Juice/Tamarind.html" class="recipe">
+          <img src="/recipes/Beverage/Juice/Tamarind Juice/Tamarind Juice.png" class="img recipe-img" alt="" />
+          <h5>Tamarind Juice</h5>
+        </a>
+        <!-- end of single recipe -->
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-text">
+    Telephone: (784) 492-2019 &emsp; <a href="mailto:tastecaribbeaninfo@gmail.com">Email:
+      tastecaribbeaninfo@gmail.com</a> &emsp; <a href="https://facebook.com">Facebook</a> &emsp; <a
+      href="https://instagram.com">Instagram</a> &emsp; <a href="https://twitter.com">Twitter</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+
+
+    </script>
+
+
+
+</body>
+
+</html>

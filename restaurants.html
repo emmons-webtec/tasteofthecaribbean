@@ -1,0 +1,1357 @@
+<!--
+Student Name: André Emmons
+
+Matriculation Number: 40543244
+
+Module: SET08801 2022-3 TR2 001 - Web Technologies
+
+Assignment Part: Number Two
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Restaurants | A Taste Of The Caribbean</title>
+
+  <!--UTILIZING BOOTHSTRAP LIBRARY FOR STYLESHEETS AND COMPONENTS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!--LOCAL STYLESHEET-->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!--UTILIZING FONT AWESOME FOR ICONS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!--Scripting languages used for animations/slideshow-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a href="/index.html" class="navbar-brand fw-bold ms-xl-3 ms-lg-3 ms-2"><img
+            style="height: 200px; width: 200px;" src="/images/Logo.jpg"></img></a>
+
+
+        <div class="navbar-title">
+          <h1 href="#" class=" navbar-main-text text-success">A Taste Of The Caribbean</h1>
+
+        </div>
+
+
+        <button class="navbar-toggler border-0 outline-0 navbar_toggler_button" data-bs-toggle="offcanvas"
+          data-bs-target="#myNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="myNavbar" class="offcanvas offcanvas-end w-75">
+          <div class="container">
+            <div class="offcanvas-header">
+              <button class="btn-close border-0 outline-0 ms-auto fs-3 offcanvas_close_btn"
+                data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body justify-content-between align-items-center">
+
+              <ul class="navbar-nav">
+                <li class="nav-item ms-xl-3 ms-lg-3 ms-0">
+                  <a href="#" class="nav-link btn px-xl-3 px-md-3 btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>Search
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="nav justify-content-center navbar-expand-lg navbar-light bg-white">
+    <div class="">
+
+      <div id="myNavbar2" class="align-items-center">
+        <div class="container">
+
+          <div class=" justify-content-center align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="/index.html" class="nav-link">Home</a>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/about-us.html" class="nav-link">About Us</a>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Recipes</a>
+                <div class="dropdown-menu border-0">
+                  <a href="/beverages.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-whiskey-glass" style="color: #f54105;"></i>
+                    Beverages
+                  </a>
+                  <a href="/breakfast.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-egg" style="color: #f5d105;"></i>
+                    Breakfast
+                  </a>
+                  <a href="/dinner.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-utensils" style="color: #0dac89;"></i>
+                    Dinner
+                  </a>
+                  <a href="/lunch.html" class="dropdown-item text-secondary">
+                    <i class="fa-solid fa-bowl-food" style="color: #1d4ed4;"></i>
+                    Lunch
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/restaurants.html" class="nav-link">Restaurants</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/culture.html" class="nav-link">Culture</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="/contact-us.html" class="nav-link ">Contact Us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main -->
+  <main class="page">
+    <section class="recipes-container">
+      <!-- tag container -->
+      <div class="tags-container">
+        <h1>Restaurants</h1>
+
+
+      </div>
+      <!-- end of tag container -->
+
+    </section>
+
+    <p><strong>ARUBA</strong> is a popular tourist destination in the Caribbean known for its white sandy beaches,
+      crystal clear waters, and warm climate. The island is also home to a vibrant culinary scene, featuring a range of
+      restaurants serving both local and international cuisine. Here are some of the best restaurants in Aruba along
+      with their telephone numbers, websites, and opening hours:</p>
+    <ol>
+      <li>Madame Janette: Madame Janette is a popular restaurant located in the northwest of Aruba. The restaurant
+        serves a range of international cuisine, including steak, seafood, and vegetarian options. The restaurant also
+        features an extensive wine list and a range of cocktails.</li>
+    </ol>
+    <p>Address: Cunucu Abao 37, Noord, Aruba.</p>
+    <p>Telephone: +297 587 0184.</p>
+    <p>Website: <a href="http://www.madamejanette.info/">http://www.madamejanette.info/</a></p>
+    <p>Opening hours: Monday to Saturday 5:30pm -10:30pm.</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Barefoot Restaurant: Barefoot Restaurant is located on the beach in the Eagle Beach area of Aruba. The
+        restaurant serves a range of Caribbean and international cuisine, including fresh seafood, salads, and
+        sandwiches. The restaurant also has a range of cocktails and live music.</li>
+    </ol>
+    <p>Address: J.E. Irausquin Blvd. 41, Eagle Beach, Aruba.</p>
+    <p>Telephone: +297 586 2447.</p>
+    <p>Website: <a href="https://www.barefootaruba.com/">https://www.barefootaruba.com/</a></p>
+    <p>Opening hours: Monday to Sunday 8am -11pm.</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Papiamento Restaurant: Papiamento Restaurant is a fine dining restaurant located in an old Aruban house in the
+        Noord area. The restaurant serves a range of international cuisine with a focus on seafood and steak. The
+        restaurant also has an extensive wine list and a range of cocktails.</li>
+    </ol>
+    <p>Address: Washington 61, Noord, Aruba.</p>
+    <p>Telephone: +297 586 4544.</p>
+    <p>Website: <a href="https://www.papiamentoaruba.com/">https://www.papiamentoaruba.com/</a></p>
+    <p>Opening hours: Monday to Sunday 5:30pm -10:30pm.</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Quinta Del Carmen: Quinta Del Carmen is a restaurant located in the Santa Cruz area of Aruba. The restaurant
+        serves a range of international cuisine with a focus on Latin American and Caribbean flavours. The restaurant
+        also has a range of cocktails and live music.</li>
+    </ol>
+    <p>Address: Weststraat 1, Santa Cruz, Aruba.</p>
+    <p>Telephone: +297 584 7676.</p>
+    <p>Website: <a href="https://www.quintadelcarmen.com/">https://www.quintadelcarmen.com/</a></p>
+    <p>Opening hours: Monday to Saturday 12pm -10pm, Sunday 4pm -10pm.</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>The Kitchen Table by White: The Kitchen Table by White is a restaurant located in the Palm Beach area of
+        Aruba. The restaurant serves a range of international cuisine with a focus on farm-to-table ingredients. The
+        restaurant also has an extensive wine list and a range of cocktails.</li>
+    </ol>
+    <p>Address: J.E. Irausquin Blvd. 55, Palm Beach, Aruba.</p>
+    <p>Telephone: +297 586 1190.</p>
+    <p>Website: <a href="http://thekitchentablebywhite.com/">http://thekitchentablebywhite.com/</a></p>
+    <p>Opening hours: Monday to Sunday 5:30pm - 10:30pm.</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>"Madame Janette." Madame Janette, http://www.madamejanette.info/</li>
+      <li>"Barefoot Restaurant." Barefoot Restaurant, https://www.barefootaruba.com/</li>
+      <li>"Papiamento Restaurant." Papiamento Restaurant, http://www.papiamentorestaurant.com/</li>
+      <li>"Quinta Del Carmen." Quinta Del Carmen, https://www.quintadelcarmen.com/.</li>
+      <li>"The Kitchen Table by White, http://thekitchentablebywhite.com/</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>THE BAHAMAS</strong> is home to some of the world's best restaurants, serving an array of cuisines that
+      reflect the island's diverse culture and history. Here are some of the top-rated restaurants in The Bahamas.</p>
+    <ol>
+      <li>Graycliff Restaurant: Located in the heart of Nassau, Graycliff Restaurant is a gourmet dining establishment
+        that has been serving up exquisite cuisine since 1973. The restaurant's menu features an impressive selection of
+        international and Bahamian dishes, and the wine cellar boasts over 250,000 bottles of wine from around the
+        world. The elegant d&eacute;cor and impeccable service make this restaurant a favourite among locals and
+        tourists alike.</li>
+    </ol>
+    <p>Address: 8-12 West Hill Street, Nassau, Bahamas</p>
+    <p>Telephone: +1 242-302-9150</p>
+    <p>Website: <a href="https://www.graycliff.com/">https://www.graycliff.com/</a></p>
+    <p>Opening Hours: Lunch - Mon to Fri from 12:00pm - 2:00pm. Dinner - Mon to Sat from 6:00pm - 9:00pm.</p>
+    <ol start="2">
+      <li>Caf&eacute; Matisse: Located in the heart of Nassau, Caf&eacute; Matisse is a cozy Italian restaurant that
+        offers a romantic atmosphere and exceptional service. The restaurant's menu features a variety of homemade pasta
+        dishes, fresh seafood, and delectable desserts. The walls are adorned with original works of art by Henri
+        Matisse, giving the restaurant a unique and sophisticated ambiance.</li>
+    </ol>
+    <p>Address: Bank Lane, Nassau, Bahamas</p>
+    <p>Telephone: +1 242-356-7012</p>
+    <p>Website: <a href="https://www.cafematisse.com/">https://www.cafematisse.com/</a></p>
+    <p>Opening Hours: Dinner - Monday to Saturday from 6:00 PM - 10:00 PM</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Fish by Jos&eacute; Andr&eacute;s: Fish by Jos&eacute; Andr&eacute;s is a modern seafood restaurant located at
+        The Cove at Atlantis resort. The restaurant features an innovative menu that celebrates the freshest seafood and
+        local Bahamian ingredients. The dishes are expertly prepared by the team of talented chefs, and the ocean views
+        provide a stunning backdrop for the dining experience.</li>
+    </ol>
+    <p>Address: The Cove at Atlantis, Paradise Island, Bahamas</p>
+    <p>Telephone: +1 242-363-3000</p>
+    <p>Website: <a href="https://www.atlantisbahamas.com/dining/">https://www.atlantisbahamas.com/dining/</a></p>
+    <p>Opening Hours: Dinner - Daily from 5:30pm - 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>https://www.graycliff.com/dining/restaurant</li>
+      <li>https://www.cafematisse.com/</li>
+      <li>https://www.atlantisbahamas.com/dining/</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>BARBADOS</strong> is a beautiful Caribbean island that is famous for its stunning beaches, warm climate,
+      and delicious food. The island is home to many restaurants that offer a diverse range of cuisine, from traditional
+      Caribbean dishes to international cuisine. Here are some of the best restaurants in Barbados:</p>
+    <ol>
+      <li>The Cliff: The Cliff is an award-winning restaurant that is located on the west coast of Barbados. The
+        restaurant has a stunning ocean view and serves contemporary Caribbean cuisine. The menu features dishes such as
+        lobster risotto and blackened yellow fin tuna.</li>
+    </ol>
+    <p>Address: Derricks, St. James, Barbados, BB24110</p>
+    <p>Telephone +1 246-432-1922</p>
+    <p>Website: <a href="https://www.thecliffbarbados.com">https://www.thecliffbarbados.com</a>.</p>
+    <p>Opening Hours for dinner from 6:30pm - 10:00pm.</p>
+
+    <ol start="2">
+      <li>Oistins Fish Fry: The Oistins Fish Fry is a popular outdoor dining experience that takes place every Friday
+        night in the fishing village of Oistins. The event features local food vendors selling fresh fish, grilled
+        meats, and other Caribbean delicacies.</li>
+    </ol>
+    <p>Address: 3F74+9PX, Oistins, Barbados</p>
+    <p>Telephone: +1 246-821-5782</p>
+    <p>Website: <a href="https://www.facebook.com/oistinfishfry/">https://www.facebook.com/oistinfishfry/</a></p>
+    <p>Opening Hours: &nbsp;from 7:00pm - 11:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Champers: Champers is a beautiful waterfront restaurant that is located on the south coast of Barbados. The
+        restaurant has a relaxed atmosphere and serves a variety of international cuisine. The menu features dishes such
+        as grilled shrimp and seared scallops.</li>
+    </ol>
+    <p>Address: Skeekes Hill. Christ church, Barbados</p>
+    <p>Telephone: +1 246-434-3463</p>
+    <p>Website: <a href="https://www.champersrestaurant.com">https://www.champersrestaurant.com</a></p>
+    <p>Opening Hours: Mon to Fri and Sun: 11:30am - 2:00pm, 5:30 pm - 9:00 pm. Sat 8:30am - 9:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Cin Cin by the Sea: Cin Cin by the Sea is a contemporary restaurant that is located on the west coast of
+        Barbados. The restaurant has a beautiful ocean view and serves Mediterranean-inspired cuisine. The menu features
+        dishes such as grilled octopus and slow-cooked lamb.</li>
+    </ol>
+    <p>Opening Hours: &nbsp;Lunch 12:00 pm - 3:00 pm. &nbsp;Dinner from 6:00pm - 10:00pm.</p>
+    <p>Telephone: +1 246-629-4557</p>
+    <p>Website: <a href="https://cincinbythesea.com">https://cincinbythesea.com</a>.</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>The Tides: The Tides is a stylish restaurant that is located on the west coast of Barbados. The restaurant has
+        a chic interior and serves contemporary Caribbean cuisine. The menu features dishes such as spiny lobster and
+        slow-cooked pork belly.</li>
+    </ol>
+    <p>Address: Balmore House, Holetown, St.James, Barbados</p>
+    <p>Telephone: +1 246-432-8356</p>
+    <p>Website: <a href="https://www.tidesbarbados.com/">https://www.tidesbarbados.com/</a></p>
+    <p>Opening Hours: Lunch 2:00pm - 3:00pm.&nbsp; Dinner from 6:00pm - 10:00pm.</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>The Cliff: https://www.thecliffbarbados.com/</li>
+      <li>Oistins Fish Fry: http://oistinsfishfry.com/</li>
+      <li>Champers: https://www.champersrestaurant.com/</li>
+      <li>Cin Cin by the Sea: https://cincinbythesea.com/</li>
+      <li>The Tides: https://www.tidesbarbados.com/</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>BELIZE</strong> is a small country located in Central America, bordered by Mexico to the north, Guatemala
+      to the west and south, and the Caribbean Sea to the east. Despite its small size, Belize has a diverse culinary
+      scene that features influences from the Caribbean, Central America, and Mexico. Here are some of the best
+      restaurants in Belize:</p>
+    <ol>
+      <li>Chef Rob's Gourmet Cafe - located in San Ignacio, Chef Rob's Gourmet Cafe is known for its fresh and
+        innovative dishes that blend international flavours with local ingredients. The restaurant's menu changes
+        frequently to reflect the seasonality of the ingredients, but some of the standout dishes include the lobster
+        fettuccine, the coconut-crusted shrimp, and the grilled mahi-mahi.</li>
+    </ol>
+    <p>Address: Sittee River Road, Hopkins Village, Stann Creek District, Belize</p>
+    <p>Telephone: (+501) 523 7225 / 672 7272</p>
+    <p>Website: <a href="https://www.chefrobelize.com/">https://www.chefrobelize.com/</a></p>
+    <p>Opening Hours: Monday to Sunday 5:00pm - 9:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>The Secret Garden - located in Placencia, The Secret Garden is a cozy and romantic restaurant that specializes
+        in seafood and other Caribbean-inspired dishes. The menu features a range of fresh and locally sourced seafood,
+        including lobster, conch, and snapper, as well as vegetarian and vegan options. The restaurant is open for
+        dinner only, and reservations are highly recommended.</li>
+    </ol>
+    <p>Address: Main Road across from basketball court Placencia, Belize</p>
+    <p>Telephone: +501-523-3385 / +501 622-1015</p>
+    <p>Facebook Page: <a
+        href="https://www.facebook.com/people/The-Secret-Garden-Restaurant-Placencia-Belize/100042579715516/">https://www.facebook.com/people/The-Secret-Garden-Restaurant-Placencia-Belize/100042579715516/</a>
+    </p>
+    <p>Opening Hours: Tue &ndash; Sat: 11:30am - 9:00pm. Sun: 11:00am to 9:00pm. Mon: Closed</p>
+    <ol start="3">
+      <li>Rumfish y Vino - located in San Pedro, Rumfish y Vino is a chic and stylish restaurant that serves up modern
+        Latin cuisine. The menu features a range of dishes that are designed to be shared, including ceviche, tacos, and
+        grilled meats. The restaurant also boasts an extensive wine list and a selection of signature cocktails. Rumfish
+        y Vino is open for lunch and dinner, and reservations are recommended.</li>
+    </ol>
+    <p>Address: Placencia Village Square, Placencia, Stann Creek District, Belize</p>
+    </li>
+    </ol>
+
+    <ol start="4">
+      <li>
+        <p>Telephone: +501-226-3535</p>
+        <p>Website: <a href="http://www.rumfishyvino.com/">http://www.rumfishyvino.com/</a></p>
+        <p>Opening Hours: Daily at 12:00pm.</p>
+        <p>&nbsp;</p>
+        <ol start="5">
+          <li>Thirsty Thursday's - located in Belize City, Thirsty Thursday's is a casual and laid-back restaurant that
+            is popular with locals and tourists alike. The menu features a range of classic American comfort food,
+            including burgers, wings, and sandwiches, as well as local Belizean favourites like rice and beans and
+            stewed chicken. The restaurant also has a full bar and hosts regular live music events. Thirsty Thursday's
+            is open for lunch and dinner, and reservations are not necessary.</li>
+        </ol>
+        <p>Address: 164 NewTown Barracks, Belize City, Belize City, Belize</p>
+        <p>Telephone: +501-223-2381 / +501 635-5897</p>
+        <p>Facebook Page: <a
+            href="https://www.facebook.com/thirstysbelizecity/">https://www.facebook.com/thirstysbelizecity/</a></p>
+        <p>Opening Hours: Tue &ndash; Sun: 11:00am - 11:50pm.&nbsp; Mon: Closed</p>
+        <p>&nbsp;</p>
+        <p>References:</p>
+        <p>1."The 10 Best Restaurants In Belize" by Amanda Zeisset, Culture Trip,
+          https://theculturetrip.com/caribbean/belize/articles/the-10-best-restaurants-in-belize/</p>
+        <p>2."Belize Restaurant Guide: 12 Must-Try Dining Experiences" by Sarah Schlichter, Smarter Travel,
+          https://www.smartertravel.com/belize-restaurant-guide/</p>
+        <p>&nbsp;</p>
+        <p><strong>THE CAYMAN ISLANDS</strong> are a popular vacation destination, known for their beautiful beaches,
+          crystal-clear waters, and excellent dining options. There are a number of restaurants in the Cayman Islands
+          that are well worth a visit, whether you are looking for local cuisine or international flavours. Here are
+          some of the best restaurants in the Cayman Islands, along with their contact information and opening hours:
+        </p>
+        <ol>
+          <li>Blue by Eric Ripert - This restaurant, located in the Ritz Carlton Grand Cayman, offers French cuisine
+            with a Caribbean twist. Chef Eric Ripert is renowned for his culinary skills and has won numerous awards for
+            his restaurant in New York City. The Cayman Islands location offers breathtaking views of the Caribbean Sea,
+            and the menu includes fresh seafood, meat, and vegetarian options.</li>
+        </ol>
+        <p>Address: The Ritz-Carlton, Grand Cayman, George Town, Cayman Islands</p>
+        <p>Telephone: +1 345-943-9000&nbsp;</p>
+        <p>Facebook Page: <a
+            href="https://www.facebook.com/people/Blue-by-Eric-Ripert/100047615834637/">https://www.facebook.com/people/Blue-by-Eric-Ripert/100047615834637/</a>
+        </p>
+        <p>Opening Hours: Dinner only, 6:00pm - 10:00 pm, closed on Tuesdays.</p>
+        <p>&nbsp;</p>
+        <ol start="2">
+          <li>Agua Restaurant &amp; Lounge - This restaurant, located in the heart of Seven Mile Beach, offers Latin
+            American cuisine with a Caribbean twist. The menu includes fresh seafood, meat, and vegetarian options, as
+            well as a variety of cocktails and wines. The restaurant has a relaxed atmosphere and is perfect for a
+            casual dinner or a night out.</li>
+        </ol>
+        <p>Address: 47 forum lane, Camana Bay, Grand Cayman, Cayman islands</p>
+        <p>Telephone: +1 345-949-2482</p>
+        <p>Website: <a href="https://www.agua.ky/">https://www.agua.ky/</a></p>
+        <p>Opening Hours: Dinner only, 5:30 pm to 10 pm, closed on Sundays.</p>
+        <p>&nbsp;</p>
+        <ol start="3">
+          <li>Luca - This Italian restaurant, located in the Caribbean Club, offers homemade pastas, fresh seafood, and
+            meat dishes. The menu also includes a variety of vegetarian options and a selection of wines. The restaurant
+            has a romantic and intimate atmosphere and is perfect for a special occasion or a romantic dinner.</li>
+        </ol>
+        <p>Address: 871 West Bay Road</p>
+        <p>Telephone: +1 345-623-4550</p>
+        <p>Website: <a href="https://www.luca.ky/">https://www.luca.ky/</a></p>
+        <p>Opening Hours: Dinner only, 5:30pm - 10:00pm, closed on Mondays.</p>
+        <p>&nbsp;</p>
+        <ol start="4">
+          <li>Calypso Grill - This waterfront restaurant, located in West Bay, offers fresh seafood and
+            Caribbean-inspired cuisine. The menu includes a variety of seafood dishes, meat dishes, and vegetarian
+            options, as well as a selection of cocktails and wines. The restaurant has a casual and laid-back atmosphere
+            and is perfect for a sunset dinner or a lunchtime break.</li>
+        </ol>
+        <p>Address: 10 Morgan Way, Morgan&rsquo;s Harbour, West Bay.</p>
+        <p>Telephone: +1 345-949-3948</p>
+        <p>Website: <a href="http://calypsogrillcayman.com/">http://calypsogrillcayman.com/</a></p>
+        <p>Opening Hours: Lunch and dinner, 11:30am to 10:00pm, closed on Sundays.</p>
+        <ol start="5">
+          <li>The Brasserie - This farm-to-table restaurant, located in George Town, offers fresh and locally sourced
+            ingredients. The menu includes a variety of dishes, including seafood, meat, and vegetarian options, as well
+            as a selection of cocktails and wines. The restaurant also has its own farm, where it grows many of the
+            ingredients used in its dishes.</li>
+        </ol>
+        <p>Address: 171 Elgin Avenue, Cricket Square, George Town, KY1-1004</p>
+        <p>Telephone: : +1 345-945-1815</p>
+        <p>Website: <a href="https://brasseriecayman.com/">https://brasseriecayman.com/</a></p>
+        <p>Opening Hours: Lunch and dinner, 11:30am - 9:00pm, closed on Sundays.</p>
+        <p>&nbsp;</p>
+        <p>References:</p>
+        <ol>
+          <li>Blue by Eric Ripert:
+            https://www.ritzcarlton.com/en/hotels/caribbean/grand-cayman/dining/blue-by-eric-ripert</li>
+          <li>Agua Restaurant &amp; Lounge: https://www.agua.ky/</li>
+          <li>Luca: https://www.luca.ky/</li>
+          <li>Calypso Grill: http://calypsogrillcayman.com/</li>
+          <li>The Brasserie: https://brasserie</li>
+        </ol>
+        <p>&nbsp;</p>
+        <p><strong>CURA&Ccedil;AO</strong> is an island in the Caribbean that offers a variety of dining options. Here
+          are some of the best restaurants on the island, along with their telephone numbers and opening hours:</p>
+        <ol>
+          <li>Kome: Kome is a restaurant that serves a fusion of Caribbean and international cuisine. The restaurant is
+            located in Willemstad, the capital city of Cura&ccedil;ao. You can contact them at. Kome is open from
+            website:</li>
+        </ol>
+        <p>&nbsp;</p>
+        <p>Address: 6 Johan Van Walbeeckpein, Cura&ccedil;ao Dutch Caribbean</p>
+        <p>Telephone: +599 9 465 0413</p>
+        <p>Website: <a href="https://www.komecuracao.com/">https://www.komecuracao.com/</a></p>
+        <p>Opening Hours:&nbsp; Mon to Sat 2:00pm -10:30pm, and Sun 5:30pm - 10:30pm.</p>
+        <p>&nbsp;</p>
+        <ol start="2">
+          <li>The Wine Cellar: The Wine Cellar is a fine dining restaurant that serves French and Caribbean cuisine. It
+            is located in the Rif Fort in Willemstad.</li>
+        </ol>
+        <p>Address: Concordiastraat, Punda Willemstad, Cura&ccedil;ao</p>
+        <p>Telephone: +599 9 461 2178</p>
+        <p>Website: <a href="https://www.winecellar.cw/">https://www.winecellar.cw/</a></p>
+        <p>Opening Hours: Monday to Sunday, from 6:30pm - 11:00pm</p>
+        <p>&nbsp;</p>
+        <ol start="3">
+          <li>Mosa Restaurant: Mosa is a seafood restaurant located in the Pietermaai district of Willemstad. They serve
+            fresh seafood dishes in a relaxed and casual atmosphere.</li>
+        </ol>
+      </li>
+    </ol>
+    </li>
+    </ol>
+
+    <p>Address: Pietermaai district of Willemstad</p>
+    <p>Telephone: +5999 691 5429</p>
+    <p>Website: <a href="https://www.mosacana.com/">https://www.mosacana.com/</a></p>
+    <p>Opening Hours: Monday to Saturday: 6:00pm &ndash; 12:00am</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Rozendaels: Rozendaels is a European-style bistro that serves breakfast, lunch, and dinner. They offer a
+        variety of dishes such as sandwiches, salads, and meat and fish dishes. Rozendaels is located in the Jan Thiel
+        area of Willemstad.</li>
+    </ol>
+    <p>Address: Restaurant Rozendaels, Penstraat 35, Willemstad, Curacao</p>
+    <p>Telephone: +5999 518 8806</p>
+    <p>Website: <a href="https://rozendaels.com/">https://rozendaels.com/</a></p>
+    <p>Opening Hours: Mon to Sun 7:30am to 10:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>Pirate Bay Beach Club: Pirate Bay Beach Club is a beachfront restaurant and bar located in the Pietermaai
+        district of Willemstad. They serve Caribbean and international cuisine and offer a variety of cocktails and
+        drinks.</li>
+    </ol>
+    <p>Address: 42FJ+49V, Piscaderaweg, Willemstad, Cura&ccedil;ao</p>
+    <p>Telephone:&nbsp; +599 9 465 4513</p>
+    <p>Website: <a href="https://piratebaycuracao.com/">https://piratebaycuracao.com/</a></p>
+    <p>Opening Hours: Monday to Sunday 10:00am to 11:00pm</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <p>1."The 10 Best Restaurants In Curacao" by Kat Brown, Culture Trip
+      (https://theculturetrip.com/caribbean/curacao/articles/the-10-best-restaurants-in-curacao/)</p>
+    <p>2."10 Best Restaurants in Willemstad, Curacao" by Marsha Shaw, USA Today
+      (https://traveltips.usatoday.com/10-restaurants-willemstad-curacao-101641.html</p>
+    <p>&nbsp;</p>
+    <p><strong>GUYANA</strong> is a small South American country with a rich and diverse culture, and this is reflected
+      in its cuisine. Here are some of the best restaurants in Guyana, along with their telephone numbers, websites, and
+      opening hours:</p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>Cara Lodge - This historic hotel has a popular restaurant that serves Guyanese and international cuisine. The
+        menu includes local seafood, meats, and vegetarian options.</li>
+    </ol>
+    <p>Address: 294 Quamina St, Georgetown, Guyana</p>
+    <p>Telephone: +592-225-5301.</p>
+    <p>Website: <a href="https://www.caralodge.com/">https://www.caralodge.com/</a></p>
+    <p>Opening Hours: Breakfast: 6:30am - 10:00am; Lunch: 12:00pm - 2:30pm; Dinner: 6:30pm - 9:30pm.</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Duke Lodge - This boutique hotel offers a fusion of Guyanese and international cuisine. Their menu features
+        locally sourced ingredients, including seafood, meats, and vegetables.</li>
+    </ol>
+    <p>Address: 94 Duke St, Kingston, Georgetown, Guyana</p>
+    <p>Telephone: +592-231-7665</p>
+    <p>Website: <a href="https://roraimaairways.com/duke-lodge/">https://roraimaairways.com/duke-lodge/</a></p>
+    <p>Opening Hours: Breakfast: 7:00am - 10:00am; Lunch: 12:00pm - 3:00pm; Dinner: 6:00pm - 10:00pm.</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Hibiscus Restaurant - This restaurant offers a mix of Guyanese and Caribbean cuisine. They serve local
+        seafood, meats, and vegetarian options.</li>
+    </ol>
+    <p>Address: 48 High St, Kingston, Georgetown, Guyana</p>
+    <p>Telephone: +592-223-0720</p>
+    <p>Facebook Page: <a href="https://www.facebook.com/Hibiscusgy/">https://www.facebook.com/Hibiscusgy/</a></p>
+    <p>Opening Hours: Mon to Thur: 11:00am -10:00pm. Fri and Sat: 11:00am - 1:00pm. Sun: 12:00pm - 9:00 pm.</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>New Thriving - This restaurant offers a wide range of Guyanese and Chinese cuisine. They are especially
+        well-known for their dim sum and seafood dishes.</li>
+    </ol>
+    <p>Address: Block M Providence, East Bank Demerara, Guyana</p>
+    <p>Telephone: +592-227-7078 / +592 225-1730</p>
+    <p>Website: <a href="https://newthrivingonline.com/">https://newthrivingonline.com/</a></p>
+    <p>Opening Hours: Mon to Sat: 11:00 am &ndash; 10:00 pm; Sun: 11:00 am &ndash; 3:00 pm.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>Oasis Cafe - This cafe offers a mix of Guyanese and international cuisine. They serve breakfast, lunch, and
+        dinner, as well as coffee and desserts. Address:. Telephone</li>
+    </ol>
+    <p>Address: 125 Carmichael St, North Cummingsburg, Georgetown, Guyana</p>
+    <p>Telephone: +592-225-2061 / +592 226 9916</p>
+    <p>Facebook Page: <a href="https://www.facebook.com/TheOasisCafe/">https://www.facebook.com/TheOasisCafe/</a></p>
+    <p>Opening Hours: Mon to Fri: 7:00am - 7pm; Sat: 8:00am - 3:00pm; Sun: Closed.</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>"Cara Lodge Restaurant." Cara Lodge, https://www.caralodge.com/restaurant/.</li>
+      <li>"Duke Lodge Restaurant." Duke Lodge, https://dukelodgegy.com/restaurant/.</li>
+      <li>"Hibiscus Restaurant." Hibiscus Restaurant, https://www.hibiscusrestaurantgy.com/.</li>
+      <li>"New Thriving Restaurant." New Thriving, https://www.newthrivinggy.com/.</li>
+      <li>"Oasis Cafe." Oasis Cafe, https://oasiscafe.gy/.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>HAITI</strong> is home to many fantastic restaurants serving delicious Haitian cuisine as well as
+      international cuisine. Below are some of the best restaurants in Haiti, along with their contact information,
+      website, and opening hours.</p>
+    <ol>
+      <li>Quartier Latin - Located in Petion-Ville, Quartier Latin is a fine dining restaurant that serves a mix of
+        Haitian and French cuisine. The restaurant is known for its elegant atmosphere and top-notch service. Quartier
+        Latin is open. They are closed on Sundays.</li>
+    </ol>
+    <p>Address: 10, rue Goulard, Place Boyer, P&eacute;tionville, Haiti</p>
+    <p>Telephone: +509 2940 6000 / +509 34 60 3326</p>
+    <p>Website: <a
+        href="https://www.tripadvisor.com/Restaurant_Review-g1098353-d1372024-Reviews-Quartier_Latin-Petionville_Ouest_Department_Haiti.html">https://www.tripadvisor.com/Restaurant_Review-g1098353-d1372024-Reviews-Quartier_Latin-Petionville_Ouest_Department_Haiti.html</a>
+    </p>
+    <p>Opening Hours: Lunch and dinner, Monday to Saturday</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>La Souvenance - This restaurant is located in Port-au-Prince and offers a menu that features traditional
+        Haitian cuisine. The restaurant is known for its beautiful setting, which includes a courtyard with a fountain.
+      </li>
+    </ol>
+    <p>Address: 5, Impasse Devilme, Rue Daniel Brun</p>
+    <p>Telephone: +509 2812 1141</p>
+    <p>Facebook Page: <a href="https://www.facebook.com/lasouvenance/">https://www.facebook.com/lasouvenance/</a></p>
+    <p>Opening Hours: Lunch and dinner, Monday to Saturday</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Papaye - Papaye is a popular restaurant chain in Haiti that offers a variety of fast-food options. The menu
+        includes Haitian dishes such as griot, pikliz, and tassot. Papaye has locations throughout the country,
+        including in Port-au-Prince, Cap-Ha&iuml;tien, and Jacmel.</li>
+    </ol>
+    <p>Address: <a
+        href="https://www.tripadvisor.com/Restaurant_Review-g147307-d4823833-Reviews-Papaye_Restaurant-Port_au_Prince_Ouest_Department_Haiti.html#MAPVIEW">Impasse
+        Metelus 48, Port-au-Prince 6113 Haiti</a></p>
+    <p>Telephone: +509 35 13 9229</p>
+    <p>Website:
+      https://www.tripadvisor.com/Restaurant_Review-g147307-d4823833-Reviews-Papaye_Restaurant-Port_au_Prince_Ouest_Department_Haiti.html
+    </p>
+    <p>Opening Hours: For Lunch and Dinner</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Observatoire - Located in Port-au-Prince, Observatoire is a rooftop restaurant that offers stunning views of
+        the city. The menu features international cuisine, with a focus on seafood.</li>
+    </ol>
+    <p>Address: <a
+        href="https://www.tripadvisor.fr/Restaurant_Review-g1098353-d7778255-Reviews-Observatoire_Bar_Restaurant-Petionville_Ouest_Department_Haiti.html#MAPVIEW">Boutilliers,
+        Petionville 6140 Haiti&nbsp;</a></p>
+    <p>Telephone: +509 34 54 0118</p>
+    <p>Website:
+      https://www.tripadvisor.fr/Restaurant_Review-g1098353-d7778255-Reviews-Observatoire_Bar_Restaurant-Petionville_Ouest_Department_Haiti.html
+    </p>
+    <p>Opening Hours: Lunch and dinner, Mon to Sat. They are closed on Sundays</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>Lakay - Lakay is a casual dining restaurant that serves Haitian cuisine. The menu features dishes such as
+        griot, legume, and seafood. Lakay has locations in Petion-Ville and Port-au-Prince.</li>
+    </ol>
+    <p>Address: <a
+        href="https://www.tripadvisor.com/Restaurant_Review-g147308-d2313747-Reviews-Lakay-Cap_Haitien_Nord_Department_Haiti.html#MAPVIEW">Boulevard
+        du Carenage, Cap-Haitien Haiti</a></p>
+    <p>Telephone: +509 37 02 9336</p>
+    <p>Website:
+      https://www.tripadvisor.com/Restaurant_Review-g147308-d2313747-Reviews-Lakay-Cap_Haitien_Nord_Department_Haiti.html
+    </p>
+    <p>Opening Hours: Lunch and Dinner Monday to Sunday</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>Quartier Latin: www.quartierlatin.ht</li>
+      <li>La Souvenance: www.facebook.com/lasouvenance</li>
+      <li>Papaye: www.papaye.ht</li>
+      <li>Observatoire: www.observatoire.ht</li>
+      <li>Lakay: www.lakayhaiti.com</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>JAMAICA</strong> is known for its rich cultural heritage and its unique cuisine, which is a blend of
+      African, European, and Indian flavors. The island boasts a variety of restaurants that cater to all tastes, from
+      traditional Jamaican dishes to international cuisine. Here are some of the best restaurants in Jamaica along with
+      their contact information, website, and opening hours:</p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>The Sugar Mill Restaurant - Half Moon Resort, Montego Bay: The Sugar Mill Restaurant is a fine dining
+        restaurant located in the Half Moon Resort in Montego Bay. The restaurant offers a sophisticated menu of
+        Jamaican and international cuisine, using locally sourced ingredients.</li>
+    </ol>
+    <p>Address: Rose Hall, Montego Bay, St. James, Jamaica</p>
+    <p>Telephone: +1 876-953-2211</p>
+    <p>Website: <a href="https://www.halfmoon.com/dining/sugar-mill">https://www.halfmoon.com/dining/sugar-mill</a></p>
+    <p>Opening Hours: Dinner only, from 6:30pm - 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Scotchies - Multiple Locations; Scotchies is a chain of restaurants that specialize in Jamaican jerk chicken
+        and pork. The restaurant uses an open-fire pit to cook their meat, which gives it a unique smoky flavour.
+        Scotchies has multiple locations across Jamaica, including in Montego Bay, Ocho Rios, and Kingston.</li>
+    </ol>
+    <p>Address: Rose Hall Main Rd., Montego Bay, Jamaica</p>
+    <p>Telephone: +1 876-953-8041</p>
+    <p>Facebook Page: <a
+        href="https://www.facebook.com/people/Scotchies/100064928695590/">https://www.facebook.com/people/Scotchies/100064928695590/</a>
+    </p>
+    <p>Opening Hours: Daily from 11:00am - 11:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>The Houseboat Grill - Freeport, Montego Bay: The Houseboat Grill is a unique restaurant located on a docked
+        boat in Montego Bay. The restaurant offers a menu of seafood and Jamaican cuisine, and diners can enjoy their
+        meal while overlooking the bay.</li>
+    </ol>
+    <p>Address: Southern Cross Blvd, Montego Freeport, Montego Bay, Jamaica</p>
+    <p>Telephone: +1 876-979-8845</p>
+    <p>Website: <a href="https://thehouseboatgrill.com/">https://thehouseboatgrill.com/</a></p>
+    <p>Opening Hours: lunch and dinner, from 12:00 PM to 9:00 PM</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Rockhouse Restaurant &ndash; Negril: The Rockhouse Restaurant is located in the Rockhouse Hotel in Negril. The
+        restaurant offers a menu of Jamaican and international cuisine, using locally sourced ingredients. Diners can
+        enjoy their meal while overlooking the Caribbean Sea.</li>
+    </ol>
+    <p>Address: <a
+        href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2F%3Fapi%3D1%26destination%3D18.264901926514%252C-78.368131220341%26fbclid%3DIwAR3lYFtkGYTQXznfAScfK-X9Ntq9rL4t0wF_B4ylAzxsexQZm1BkbzxHR0E&amp;h=AT0MlQSpYHncQyLQ0qhMow7HAfSf_8VBEVipifocL2zUPIISznOKfzK9dRXfeD8qsIq0QiSZyJmKq50FZ8z7_nUdWipL6rcDsTIOR4bdzoetEm0nk9W0b0A8O-1yVbYUvh9NBOM6uhUgdlyUQu9gUg">West
+        End Road Negril, Jamaica</a></p>
+    <p>Telephone: +1 876-957-4373</p>
+    <p>Facebook page: https://www.facebook.com/rockhouse.hotel/</p>
+    <p>Opening Hours: Daily from 7:30am to 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <p>1."The Sugar Mill Restaurant." Half Moon Resort. Accessed April 14, 2023.
+      https://www.halfmoon.com/dining/the-sugar-mill-restaurant/.</p>
+    <ol start="2">
+      <li>"Scotchies." Scotchies. Accessed April 14, 2023. https://www.scotchies.com/.</li>
+    </ol>
+    <p>3."The Houseboat Grill." The Houseboat Grill. Accessed April 14, 2023. https://www.houseboatgrill.com/.</p>
+    <p>4."Rockhouse Restaurant." Rockhouse Hotel. Accessed April 14, 2023. https://www.rockhouse.com/restaurant/</p>
+    <p>&nbsp;</p>
+    <p><strong>ANTIGUA AND BARBUDA</strong> is a small island nation located in the Caribbean region. The country is
+      well known for its beautiful beaches, crystal clear waters, and delicious Caribbean cuisine. Here are some of the
+      best restaurants in Antigua and Barbuda, along with their telephone numbers, websites, and opening hours:</p>
+    <ol>
+      <li>Sheer Rocks - Located in the Coco Bay Resort in Antigua, Sheer Rocks is a fine dining restaurant that serves
+        Mediterranean-inspired cuisine with a Caribbean twist. The restaurant offers stunning views of the sea and the
+        sunset, and it features a chic and elegant ambiance. Some of the popular dishes at Sheer Rocks include the
+        yellowfin tuna tartare, the seared scallops, and the grilled lobster. Sheer Rocks is open for lunch and dinner,
+        and reservations are recommended.</li>
+    </ol>
+    <p>Address: Valley Rd, Saint Mary's, Antigua and Barbuda</p>
+    <p>Telephone: +1 268-562-4510</p>
+    <p>Website: https://sheer-rocks.com/</p>
+    <p>Opening hours: Monday to Sunday from 11:30am to 11:00pm</p>
+    <p>&nbsp;</p>
+    </li>
+    </ol>
+    </li>
+    </ol>
+
+    <ol start="2">
+      <li>The Admiral's Inn Restaurant - The Admiral's Inn is located in the historic Nelson's Dockyard in Antigua, and
+        it offers a beautiful waterfront setting with views of the boats and yachts. The restaurant serves classic
+        Caribbean and international cuisine, and it features a relaxed and casual atmosphere. Some of the popular dishes
+        at The Admiral's Inn Restaurant include the conch fritters, the grilled catch of the day, and the seafood
+        linguine. The restaurant is open for breakfast, lunch, and dinner.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>Address: Nelson's Dockyard, English Harbour, Antigua and Barbuda</p>
+    <p>Telephone: +1 268-460-1027</p>
+    <p>Website: http://www.admiralsinnantigua.com/</p>
+    <p>Opening hours: Monday to Sunday from 7:30am to 10:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Cecilia's High Point Cafe - Cecilia's High Point Cafe is a charming cafe that is located in the heart of St.
+        John's, the capital city of Antigua and Barbuda. The cafe serves a variety of breakfast and lunch options,
+        including sandwiches, salads, and smoothies. The cafe also offers gluten-free and vegetarian options. Some of
+        the popular dishes at Cecilia's High Point Cafe include the avocado toast, the quinoa salad, and the acai bowl.
+        The cafe is open for breakfast and lunch.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>Address: High St, St. John's, Antigua and Barbuda</p>
+    <p>Telephone: +1 268-562-7070</p>
+    <p>Website: https://highpointantigua.com/</p>
+    <p>Opening hours: Monday to Friday from 7:30am to 4:00pm, Saturday from 8:00am to 2:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Catherine's Cafe - Located in the Pigeon Point Beach Club in Antigua, Catherine's Cafe is a French-inspired
+        restaurant that offers a romantic and elegant atmosphere. The restaurant serves classic French cuisine with
+        Caribbean flavours, and it features an extensive wine list. Some of the popular dishes at Catherine's Cafe
+        include the lobster bisque, the steak frites, and the chocolate mousse. The restaurant is open for lunch and
+        dinner, and reservations are recommended.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>Address: Pigeon Point Beach Club, St. John's, Antigua and Barbuda</p>
+    <p>Telephone: +1 268-460-5050</p>
+    <p>Website: https://www.catherines-cafe.com/</p>
+    <p>Opening hours: Monday to Sunday from 12:00pm to 3:00pm and 6:00pm to 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <p>1 "10 Best Restaurants in Antigua" by Paul Joseph, USA Today</p>
+    <p>&nbsp;</p>
+    <p><strong>DOMINICA</strong>, also known as the Nature Island of the Caribbean, is a small island nation located in
+      the eastern Caribbean Sea. Although Dominica is not widely known for its cuisine, it has a vibrant food scene with
+      many great restaurants. Here are some of the best restaurants in Dominica:</p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>The Champs Restaurant &amp; Bar: Located in the capital city of Roseau, The Champs Restaurant &amp; Bar is a
+        popular spot for both locals and tourists. The restaurant serves a fusion of Caribbean and international
+        cuisine, and has a well-stocked bar with a wide selection of wines, beers, and cocktails.</li>
+    </ol>
+    <p>Address: Blanca Heights, Picard, Portsmouth, 00152 Dominica W.I.</p>
+    <p>Telephone: +1 767-448-5000 / 1-767 613-0929</p>
+    <p>Website: https://www.hotelthechamps.com/restaurant/</p>
+    <p>Opening Hours: Mon to Sat from 7:00am - 10:00pm and on Sun from 8:00am - 4:00pm.</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Islet View Restaurant: Located in Portsmouth, Islet View Restaurant offers a beautiful view of the bay and the
+        surrounding islands. The restaurant serves a range of Caribbean dishes, including fresh seafood, grilled meats,
+        and vegetarian options.</li>
+    </ol>
+    <p>Address: <a
+        href="https://www.tripadvisor.com/Restaurant_Review-g147281-d3833555-Reviews-Islet_View_Restaurant_and_Bar-Dominica.html#MAPVIEW">Castle
+        Bruce Dominica</a></p>
+    <p>Telephone: +1 767-617-0143 / <a href="tel:+1%20767-446-0370">+1 767-446-0370</a></p>
+    <p>Website:
+      https://www.tripadvisor.com/Restaurant_Review-g147281-d3833555-Reviews-Islet_View_Restaurant_and_Bar-Dominica.html
+    </p>
+    <p>Opening Hours: Daily from 11:00am - 9:00pm.</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Papillote Wilderness Retreat &amp; Restaurant: Situated in the heart of Dominica's rainforest, Papillote
+        Wilderness Retreat &amp; Restaurant offers a unique dining experience in a stunning natural setting. The
+        restaurant serves a range of Caribbean and international cuisine, with many of the ingredients sourced from the
+        retreat's own gardens.</li>
+    </ol>
+    <p>Address: Trafalgar Falls Road, Trafalgar, Dominica</p>
+    <p>Telephone: +1 767-448-2287 +1 767-295-9564</p>
+    <p>Facebook Page: <a
+        href="https://www.facebook.com/people/Papillote-Wilderness-Retreat/100063214491194/">https://www.facebook.com/people/Papillote-Wilderness-Retreat/100063214491194/</a>
+    </p>
+    <p>Opening Hours: Daily from 7:00am - 9:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Sunset Bay Club &amp; Seafood Restaurant: Located in the charming village of Salisbury, Sunset Bay Club &amp;
+        Seafood Restaurant is known for its delicious seafood dishes and beautiful sunset views. The restaurant also
+        serves a range of Caribbean and international cuisine. The restaurant is open daily from 10 am to 9 pm.</li>
+    </ol>
+    <p>Address: Coulibistrie, Roseau, Dominica</p>
+    <p>Telephone: +1 767-295-1076 / +1 767-235-6522</p>
+    <p>Facebook Page: <a
+        href="https://www.facebook.com/SunsetBayClubLobsterPalace/">https://www.facebook.com/SunsetBayClubLobsterPalace/<a>
+    </p>
+    <p>Opening Hours: Daily from 10:00am to 9:00pm.</p>
+    <p>References:</p>
+    <p>1."The Best Restaurants in Dominica", Culture Trip, accessed April 14, 2023,
+      https://theculturetrip.com/caribbean/dominica/articles/the-best-restaurants-in-dominica/</p>
+    <p>2."Top 10 Restaurants in Dominica", Discover Dominica Authority, accessed April 14, 2023,
+      https://www.discoverdominica.com/en/places/52/top-10-restaurants-in-dominica</p>
+    <p>&nbsp;</p>
+    <p><strong>GRENADA</strong>, known as the "Spice Isle," is a beautiful Caribbean island with a rich history and
+      culture. The island's culinary scene is a blend of Caribbean, African, and European influences, resulting in a
+      unique and flavourful cuisine. Here are some of the best restaurants in Grenada, along with their contact
+      information.</p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>The Beach House Restaurant - Located on Grand Anse Beach, The Beach House Restaurant offers a breathtaking
+        view of the Caribbean Sea while you dine. The menu features fresh seafood, grilled meats, and a variety of
+        vegetarian options.</li>
+    </ol>
+    <p>Address: Airport Rd., Point Salines, St. George</p>
+    <p>Telephone: +1 473-439-9975</p>
+    <p>Website: <a
+        href="https://grenada-beaches.com/restaurants/beach-house-restaurant-grenada/">https://grenada-beaches.com/restaurants/beach-house-restaurant-grenada/</a>
+    </p>
+    <p>Opening Hours: Daily 11:00am - 10:00pm.</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Rhodes Restaurant - This fine dining establishment, located at the Calabash Luxury Boutique Hotel, offers a
+        fusion of European and Caribbean cuisine. The menu includes dishes like lamb with a spicy harissa crust and
+        lobster ravioli.</li>
+    </ol>
+    <p>Address: Anse Aux Epines Beach, St. George&rsquo;s Grenada</p>
+    <p>Telephone: +1 473-444-4334</p>
+    <p>Website: <a href="https://www.calabashhotel.com/food-overview">https://www.calabashhotel.com/food-overview</a>
+    </p>
+    <p>Opening Hours: Daily 7:00pm to 10:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>BB's Crabback - This waterfront restaurant in St. George's is known for its fresh seafood and
+        Caribbean-inspired dishes. The menu includes items like conch chowder, shrimp scampi, and grilled mahi-mahi.
+      </li>
+    </ol>
+    <p>Address: Progress House, St. Georges, Grenada</p>
+    <p>Telephone: +1 473-440-4784 / 473-435-7058</p>
+    <p>Website: <a
+        href="http://www.bbscrabbackrestaurant.com/i_main_courses.html">//www.bbscrabbackrestaurant.com/i_main_courses.html</a>
+    </p>
+    <p>Opening Hours: Mon to Sat 11:00am - 10:00pm and Sun from 5:00pm - 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>The Owl - This farm-to-table restaurant in St. George's serves up fresh and organic cuisine using ingredients
+        sourced from local farmers. The menu changes regularly to reflect what is in season.</li>
+    </ol>
+    <p>Address: Grand Anse, Saint George's, Grenada</p>
+    <p>Telephone: +1 473-537-5555 / +1 473-444-4247</p>
+    <p>Facebook Page: <a href=:"https://www.facebook.com/owlgrenada/">https://www.facebook.com/owlgrenada/</a></p>
+    <p>Opening Hours: Lunch Wed, Thur and Fri from 1100:am - 3:00pm. Dinner from 6:00pm to 10:00pm on Wed, Thur, Fri,
+      and Sat.</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>The Edge - Located at the Grenadian by Rex Resorts in Grand Anse, The Edge offers a variety of international
+        dishes with Caribbean twists. The menu includes items like jerk chicken, seafood paella, and coconut curry
+        shrimp.</li>
+    </ol>
+    <p>Address: Grenada, Saint George's, Grenada</p>
+    <p>Telephone: +1 473-444-3333</p>
+    <p>Website: <a
+        href="https://www.rexresorts.com/grenadian/restaurants-bars/the-edge/">https://www.rexresorts.com/grenadian/restaurants-bars/the-edge/</a>
+    </p>
+    <p>Opening Hours: Daily 7:00am to 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <p>1."The 10 Best Restaurants in Grenada." Culture Trip, 13 Mar. 2018,
+      https://theculturetrip.com/caribbean/grenada/articles/the-10-best-restaurants-in-grenada/.</p>
+    <p>2."Where to Eat in Grenada: A Guide to the Best Restaurants." Cond&eacute; Nast Traveler, 13 Oct. 2020,
+      >https://www.cntraveler.com/story/where-to-eat-in-grenada-a-guide-to-the-best-restaurants.</p>
+    <p>&nbsp;</p>
+    <p><strong>SAINT KITTS AND NEVIS</strong> is a small Caribbean island nation known for its beautiful beaches, scenic
+      landscapes, and rich cultural heritage. The local cuisine is a mix of African, British, and French influences,
+      featuring fresh seafood, tropical fruits, and aromatic spices. Here are some of the best restaurants to explore
+      while in Saint Kitts and Nevis.</p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>Marshall's Restaurant - located in Basseterre, Saint Kitts, Marshall's Restaurant offers a fine dining
+        experience with a stunning view of the Caribbean Sea. The menu features local and international cuisine,
+        including fresh seafood, steaks, and vegetarian options. Their signature dish is the lobster thermidor, which is
+        a must-try for seafood lovers.</li>
+    </ol>
+    <p>Address: Fort Tyson, Frigate Bay, St. Kitts</p>
+    <p>Telephone: +1 869-465-8597 / +869-466-8245</p>
+    <p>Website: <a href="https://www.marshallsdining.com/">https://www.marshallsdining.com/</a></p>
+    <p>Opening Hours: Daily from 12:00pm to 10:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>The Pavilion at Christophe Harbour - located in Basseterre, Saint Kitts, The Pavilion offers an elegant dining
+        experience in a waterfront setting. The menu features modern Caribbean cuisine, including fresh seafood, grilled
+        meats, and seasonal vegetables.</li>
+    </ol>
+    <p>Address: &nbsp;Southeast Peninsula, Christophe Harbour, St Kitts &amp; Nevis</p>
+    <p>Telephone: +1 869-465-8304 / +1 869-465-4040</p>
+    <p>Website: <a
+        href="https://www.christopheharbour.com/destination/dining">https://www.christopheharbour.com/destination/dining</a>
+    </p>
+    <p>Opening Hours: Daily for lunch and dinner</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>Salt Plage - located in Saint Kitts, Salt Plage is a beachside restaurant and bar that offers a relaxed
+        atmosphere and stunning views of the Caribbean Sea. The menu features Caribbean-inspired cuisine, including
+        fresh seafood, grilled meats, and tropical cocktails.</li>
+    </ol>
+    <p>Address: Christophe Harbour, Basse Terre Town, Saint Kitts and Nevis</p>
+    <p>Telephone: +1 869-466-7221</p>
+    <p>Website: <a href="https://www.saltplagestkitts.com/">https://www.saltplagestkitts.com/</a></p>
+    <p>Opening Hours: Daily from 11:00am - 9:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>The Rocks - located in Nevis, The Rocks offers a unique dining experience in a 200-year-old sugar mill. The
+        menu features farm-to-table cuisine, using locally sourced ingredients, including fresh seafood, organic meats,
+        and seasonal produce. The restaurant is open for breakfast, lunch, and dinner daily, with live music on selected
+        nights. For reservations, call +1 869-469-3444 or visit their website:</li>
+    </ol>
+    <p>Address: Christophe Harbour, Basse Terre Town, Saint Kitts and Nevis</p>
+    <p>Telephone: +1 869-469-3444</p>
+    <p>Website: <a href="https://www.goldenhindnevis.com/the-rocks">https://www.goldenhindnevis.com/the-rocks</a></p>
+    <p>Opening Hours: Daily for lunch and dinner</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>Bananas - located in Nevis, Bananas is a lively restaurant and bar that offers a casual atmosphere and live
+        music. The menu features Caribbean-inspired cuisine, including fresh seafood, jerk chicken, and tropical drinks.
+        The restaurant is open for lunch and dinner daily, with happy hour specials from 4 pm to 6 pm. For more
+        information, visit their website:</li>
+    </ol>
+    <p>Address: Upper Hamilton Estate, St.Jjohns, Nevis, kn</p>
+    <p>Telephone: +1(869) 469-1891</p>
+    <p>Website: <a href="https://www.bananasrestaurantnevis.com/">https://www.bananasrestaurantnevis.com/</a></p>
+    <p>Opening Hours: Monday o Friday 11:00am &ndash; 9:00pm</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>Marshall's Restaurant: https://www.marshalls.restaurant/</li>
+      <li>The Pavilion at Christophe Harbour: https://www.christopheharbour.com/dining</li>
+      <li>Salt Plage: https://www.saltplagestkitts.com/</li>
+      <li>The Rocks: https://www.goldenhindnevis.com/the-rocks</li>
+      <li>Bananas: https://www.bananasrestaurantnevis.com/</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>SAINT LUCIA</strong> is an island country located in the eastern Caribbean Sea. The country is known for
+      its stunning beaches, lush rainforests, and vibrant culture. The culinary scene in Saint Lucia is equally
+      impressive, with a range of restaurants serving both local and international cuisine. In this article, we will
+      take a look at some of the best restaurants in Saint Lucia, along with their telephone numbers, websites, and
+      opening hours.</p>
+    <p>&nbsp;</p>
+    <ol start="1">
+      <li>The Cliff at Cap is an award-winning restaurant located at Cap Maison Resort &amp; Spa. The restaurant offers
+        stunning views of the Caribbean Sea and serves a fusion of Caribbean and French cuisine. Some of the signature
+        dishes include Lobster Risotto and Beef Tenderloin.</li>
+    </ol>
+    <p>Address: Smugglers Cove Drive, Cap Estate, St Lucia</p>
+    <p>Telephone number: +1 758-457-8681</p>
+    <p>Website: <a href="https://www.capmaison.com/the-cliff-at-cap">https://www.capmaison.com/the-cliff-at-cap</a></p>
+    <p>Opening Hours: Monday to Saturday Dinner only 6:30pm - 9:30pm</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Jacques Waterfront Dining is located on the waterfront in Rodney Bay and serves a range of international
+        cuisine. The restaurant offers stunning views of the marina and is known for its seafood dishes. Some of the
+        signature dishes include Lobster Thermidor and Seafood Linguine.</li>
+    </ol>
+    <p>Address: Smugglers Cove Drive, Cap Estate, St Lucia</p>
+    <p>Telephone number: +1 758-452-8522 / +1 758-457-8670</p>
+    <p>Website: <a href="https://jacquesrestaurant.com/">https://jacquesrestaurant.com/</a></p>
+    <p>Opening Hours: Daily 7:30am - 9:30pm</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>The Coal Pot is a charming restaurant located on the waterfront in Castries. The restaurant serves a range of
+        Caribbean and French cuisine, with an emphasis on fresh seafood. Some of the signature dishes include Grilled
+        Lobster and Snapper Filet.</li>
+    </ol>
+    <p>Address: Seraphine Road, Castries 00124 St. Lucia</p>
+    <p>Telephone number: +1 758-452-5566</p>
+    <p>Website: <a
+        href="https://www.tripadvisor.com/Restaurant_Review-g147343-d1218595-Reviews-The_Coal_Pot-Castries_Castries_Quarter_St_Lucia.html">https://www.tripadvisor.com/Restaurant_Review-g147343-d1218595-Reviews-The_Coal_Pot-Castries_Castries_Quarter_St_Lucia.html</a>
+    </p>
+    <p>Opening Hours: Monday to Friday 11:30am - 9:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Dasheene is located at Ladera Resort and offers stunning views of the Pitons and the Caribbean Sea. The
+        restaurant serves a range of Caribbean and international cuisine, with an emphasis on fresh, local ingredients.
+        Some of the signature dishes include Callaloo Soup and Grilled Octopus.</li>
+    </ol>
+    <p>Address: ​ Rabot Estate Soufriere St. Lucia</p>
+    <p>Telephone number: +1 758-459-7323</p>
+    <p>Website: <a href="https://www.ladera.com/dining.html">https://www.ladera.com/dining.html</a></p>
+    <p>Opening hours: Daily 7:00am - 9:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>The Naked Fisherman Beach Bar &amp; Grill is located on Smugglers Cove Beach and serves a range of Caribbean
+        and international cuisine. The restaurant offers stunning views of the beach and is known for its fresh seafood
+        dishes. Some of the signature dishes include Conch Fritters and Grilled Mahi-Mahi.</li>
+    </ol>
+    <p>Address: Smugglers Cove, Cap Estate, St. Lucia</p>
+    <p>Telephone number: +1 758-457-4940 / 1 758 457 8694</p>
+    <p>Website: <a href="https://nakedfishermanstlucia.com/">https://nakedfishermanstlucia.com/</a></p>
+    <p>Opening Hours: Daily 11:00am - 10:00pm</p>
+    <p>&nbsp;</p>
+    <p>Reference:</p>
+    <ol>
+      <li>TripAdvisor</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p><strong>SAINT VINCENT AND THE GRENADINES</strong> is a beautiful multi island state known as &ldquo;The gem of
+      The Antilles, Home of the Blessed&nbsp; that boasts a rich culture and an excellent culinary scene. The country
+      has a wide range of restaurants that serve both local and international cuisine, making it a perfect destination
+      for food lovers. In this article, we will provide detailed information on the best restaurants in Saint Vincent
+      and the Grenadines, including their telephone numbers, websites, and opening hours.</p>
+    <p>&nbsp;</p>
+    <ol>
+      <li>The Beachcombers Hotel &amp; Restaurant is located on Villa Beach in Saint Vincent and the Grenadines. This
+        restaurant offers a unique dining experience, with stunning ocean views and a menu that features both local and
+        international cuisine.</li>
+    </ol>
+    <p>Address: Beachcombers Hotel, Villa, St. Vincent</p>
+    <p>Telephone: 1 784-458-4283</p>
+    <p>Website: <a href="https://beachcombershotel.com/restaurant/">https://beachcombershotel.com/restaurant/</a></p>
+    <p>Opening Hours: &nbsp;Daily 7:00am to 9:00pm</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ol start="2">
+      <li>Flow Wine Bar &amp; Kitchen is a modern, upscale restaurant located in Kingstown, Saint Vincent and the
+        Grenadines. The restaurant offers a diverse menu that features Mediterranean and Caribbean-inspired dishes, as
+        well as an extensive wine list.</li>
+    </ol>
+    <p>Address: James Street, Kingstown, Kingstown, Saint Vincent and the Grenadines</p>
+    <p>Telephone: +1 784-485-5396 / 784-457-0809</p>
+    <p>Website: <a href="http://www.flowwinebar.com/">http://www.flowwinebar.com/</a></p>
+    <p>Opening Hours: Mon-Thur 11am-10pm, Fri 11am-12am, Sat 11am-10pm</p>
+    <p>&nbsp;</p>
+    <ol start="3">
+      <li>The French Verandah Restaurant is a charming restaurant located in Kingstown, Saint Vincent and the
+        Grenadines. The restaurant offers a menu that features classic French cuisine with a Caribbean twist, as well as
+        an extensive wine list.</li>
+    </ol>
+    <p>Address: Villa Beach, Saint Vincent</p>
+    <p>Telephone: +1 784-453-1111 / +1 784-457-2941</p>
+    <p>Website: <a
+        href="https://www.marinershotel.com/the-french-verandah-restaurant">https://www.marinershotel.com/the-french-verandah-restaurant</a>
+    </p>
+    <p>Opening Hours: Daily 7:00am to 11:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="4">
+      <li>Basil&rsquo;s Bar is a legendary restaurant and bar located on Mustique Island, Saint Vincent and the
+        Grenadines. The restaurant offers a menu that features fresh seafood, grilled meats, and other local
+        specialties. The bar is also known for its delicious cocktails and lively atmosphere.</li>
+    </ol>
+    <p>Address: Mustique, St. Vincent and the Grenadines</p>
+    <p>Telephone: +1 784-488-8350</p>
+    <p>Website: <a href="https://basilsbar.com/">https://basilsbar.com/</a></p>
+    <p>Opening Hours: Daily 12:00pm &ndash; 3:00pm and 6:00pm &ndash; 10:00pm</p>
+    <p>&nbsp;</p>
+    <ol start="5">
+      <li>New Baystones Restaurant and Bar, we serve a variety of international foods with a Caribbean flair which makes
+        our restaurant an extremely sort-after choice.&nbsp;</li>
+    </ol>
+    <p>Address: Buccament Bay, Saint Vincent and the Grenadines</p>
+    <p>Telephone: +1784-527-5247</p>
+    <p>Website: <a href="https://newbaystonesrestaurant.com/">https://newbaystonesrestaurant.com/</a></p>
+    <p>Opening Hours: Mon - Fri: 7:00am -12:00am. Sat - Sun: 7:00am - 1:00am</p>
+    <p>&nbsp;</p>
+    <p>References:</p>
+    <ol>
+      <li>https://www.tripadvisor.com/Restaurants-g147380-Saint_Vincent_and_the_Grenadines.html</li>
+      <li>https://www.lonelyplanet.com/st-vincent-and-the-grenadines/restaurants/a/poi-eat/1317564</li>
+      <li>https://www.travelandleisure.com/trip-ideas/best-restaurants-st-vincent-grenadines</li>
+      </01>
+      <p>&nbsp;</p>
+      <p><strong>SINT MAARTEN</strong>, also known as Saint Martin, is a beautiful Caribbean island that is home to some
+        of the best restaurants in the region. With a diverse culinary scene influenced by French, Dutch, and Caribbean
+        cuisines, visitors are spoilt for choice when it comes to dining options. Below are some of the top restaurants
+        in Sint Maarten, along with their telephone numbers, websites, and opening hours.</p>
+      <p>&nbsp;</p>
+      <ol>
+        <li>Le Pressoir Located in the charming town of Grand Case, Le Pressoir is a French restaurant that has been
+          serving up delicious food for over 40 years. The restaurant's menu features classic French dishes such as
+          escargots, foie gras, and bouillabaisse, as well as a selection of local seafood.</li>
+      </ol>
+      <p>Address: 7, rue de l'hopital, 56890 Saint Av&eacute;</p>
+      <p>Telephone: +590 590 87 71</p>
+      <p>Website: <a href="http://www.le-pressoir.fr/en/home">http://www.le-pressoir.fr/en/home</a></p>
+      <p>Opening Hours: Daily 6:30pm - 10:00pm</p>
+      <p>&nbsp;</p>
+      <ol start="2">
+        <li>Temptation If you're looking for a contemporary dining experience, Temptation is the place to be. Located in
+          Simpson Bay, this restaurant offers a fusion of Asian and Caribbean flavors in a stylish setting. The menu
+          includes sushi, sashimi, and other Japanese-inspired dishes, as well as locally caught seafood and Caribbean
+          classics.</li>
+      </ol>
+      <p>Address: Lowlands, Starz Casino, Cupecoy Bay, St Maarten-St Martin.</p>
+      <p>Telephone: +1 721-545-2254</p>
+      <p>Website: at <a href="https://www.temptation-sxm.com/">https://www.temptation-sxm.com/</a></p>
+      <p>Opening Hours: Tuesday to Sunday from 5:30pm to 10:00pm</p>
+      <p>&nbsp;</p>
+      <ol start="3">
+        <li>Topper's is a beachfront restaurant located in Simpson Bay that offers a relaxed and casual dining
+          experience. The restaurant's menu features a range of dishes, including burgers, pizzas, salads, and seafood.
+          Visitors can enjoy their meals while taking in stunning views of the Caribbean Sea.</li>
+      </ol>
+      <p>Address: 113 Welfare Road Simpson Bay St. Maarten</p>
+      <p>Telephone: +1 721-544-6004 / +1(721) 544-3500&nbsp; |&nbsp; +1(721) 520-6760</p>
+      <p>Website: <a href="https://www.toppers-restaurant.com/">https://www.toppers-restaurant.com/</a></p>
+      <p>Opening Hours: Daily 11:00am - 10:00pm</p>
+      <p>&nbsp;</p>
+      <ol start="4">
+        <li>Ocean 82 is another French restaurant located in Grand Case that offers a fine dining experience. The
+          restaurant's menu features French and Caribbean fusion dishes, such as lobster ravioli, duck confit, and
+          Creole-style seafood.</li>
+      </ol>
+      <p>Address: 82 oulevard de grand case, 97150 saint martin fwi</p>
+      <p>Telephone: +1 721-523-6886</p>
+      <p>Website: <a href="https://www.ocean82restaurant.com/">https://www.ocean82restaurant.com/</a></p>
+      <p>Opening Hours: Daily 6:00pm - 10:00pm</p>
+      <p>&nbsp;</p>
+      <ol start="5">
+        <li>The Stone is a steakhouse located in Cupecoy that offers high-quality meats, fresh seafood, and a variety of
+          sides and appetizers. The restaurant also has an extensive wine list and a selection of cocktails.</li>
+      </ol>
+      <p>Address: 2WJ7+4PG, Cole Bay, Sint Maarten</p>
+      <p>Telephone: +1 721-581-2318 / +590 590 29-6884</p>
+      <p>Website: <a href="https://thestonesxm.com/">https://thestonesxm.com/</a></p>
+      <p>Opening Hours: Daily 5:00pm - 11:00pm</p>
+      <p>&nbsp;</p>
+      <p>References:</p>
+      <p>1."The 10 Best Restaurants In St Maarten, Caribbean." Culture Trip,
+        https://theculturetrip.com/caribbean/saint-martin/articles/the-10-best-restaurants-in-st-maarten-caribbean/.</p>
+      <p>2."10Best Restaurants in St. Maarten/St. Martin." USA Today 10Best,
+        https://www.10best.com/destinations/st-martin-st-maarten/restaurants/best-restaurants/</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>SURINAME</strong>, a small country on the northern coast of South America, has a diverse culinary scene
+        that reflects its cultural influences from Indonesia, India, China, Africa, and the Netherlands. Here are some
+        of the best restaurants in Suriname:</p>
+      <p>&nbsp;</p>
+      <ol>
+        <li>De Waag: Located in the historic district of Paramaribo, De Waag offers a fine-dining experience with a menu
+          that highlights local ingredients and flavors. The restaurant is housed in a restored 18th-century building
+          that used to be a weighing station for goods.</li>
+      </ol>
+      <p>Address: Kleine Waterstraat 2, Paramaribo, Suriname</p>
+      <p>Telephone: +597 422220</p>
+      <p>Website: <a href="https://www.dewaag.sr/">https://www.dewaag.sr/</a></p>
+      <p>Opening Hours: Tue to Sat 6:00 pm to 10:00 pm</p>
+      <p>&nbsp;</p>
+      <ol start="2">
+        <li>Zin: This trendy bistro-style restaurant serves contemporary European cuisine with a Surinamese twist. Zin's
+          menu features seasonal and locally sourced ingredients and an extensive wine list.</li>
+      </ol>
+      <p>Address: J.A. Pengelstraat 141, Paramaribo, Suriname</p>
+      <p>Telephone: +597 421766</p>
+      <p>Website: <a
+          href="https://www.tripadvisor.nl/Hotel_Review-g294082-d2225269-Reviews-Zin_Resort-Paramaribo_Paramaribo_District.html">https://www.tripadvisor.nl/Hotel_Review-g294082-d2225269-Reviews-Zin_Resort-Paramaribo_Paramaribo_District.html</a>
+      </p>
+      <p>Opening Hours: Tuesday to Saturday 5:30pm - 11:00pm</p>
+      <p>&nbsp;</p>
+      <ol start="3">
+        <li>Garden of Eden: If you're in the mood for something exotic, head to Garden of Eden, a restaurant that
+          specializes in authentic Indonesian cuisine. Garden of Eden's menu includes dishes such as nasi goreng, sateh,
+          and rendang, all made from scratch using traditional recipes.</li>
+      </ol>
+      <p>Address: Drambrandersgracht 39, Paramaribo, Suriname</p>
+      <p>Telephone: +597 530500</p>
+      <p>Website: <a href="https://www.gardenofeden.sr/">https://www.gardenofeden.sr/</a></p>
+      <p>Opening Hours: Monday to Saturday from 11:00am&nbsp; 10:00pm.</p>
+      <p>&nbsp;</p>
+      <ol start="4">
+        <li>Warung Pawiro: For a taste of authentic Surinamese cuisine, head to Warung Pawiro, a small restaurant that
+          serves dishes such as pom, roti, and bakkeljauw. The restaurant is run by a friendly couple who make
+          everything from scratch. Address: Welgedacht A Weg 1, Paramaribo, Suriname. Telephone: +597 7425171. Website:
+          https://www.facebook.com/warungpawiro/. Opening hours</li>
+      </ol>
+      <p>Address: Welgedacht A Weg 1, Paramaribo, Suriname</p>
+      <p>Telephone: +597 7425171</p>
+      <p>Website: <a href="https://www.facebook.com/warungpawiro">https://www.facebook.com/warungpawiro</a></p>
+      <p>Opening Hours:Monday to Saturday from 11:00am - 8:00pm.</p>
+      <p>&nbsp;</p>
+      <p>References:</p>
+      <ol>
+        <li>De Waag. (n.d.). About. De Waag. https://www.dewaag.sr/about</li>
+        <li>Zin. (n.d.). About. Zin. https://zin.sr/about/</li>
+        <li>Garden of Eden. (n.d.). Home. Garden of Eden. https://www.gardenofeden.sr/</li>
+        <li>Warung Pawiro. (n.d.). Warung Pawiro. https://www.facebook.com/warungpawiro/</a></li>
+        </01>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><strong>TRINIDAD AND TOBAGO</strong> is a beautiful Caribbean nation famous for its rich cultural heritage,
+          stunning beaches, and mouth-watering cuisine. The country offers an array of dining options, from casual
+          eateries to fine dining restaurants. In this article, we'll explore some of the best restaurants in Trinidad
+          and Tobago, their phone numbers, websites, and opening hours.</p>
+        <p>&nbsp;</p>
+        <ol>
+          <li>Chaud Cafe and Wine Bar is a chic and sophisticated restaurant located in the heart of Port of Spain,
+            Trinidad. It offers a contemporary fusion of Caribbean and international cuisine, complemented by an
+            extensive wine list. The restaurant is open</li>
+        </ol>
+        <p>Address: One Woodbrook Place Unit 4A Damien Street, Port of Spain 0000 Trinidad</p>
+        <p>Phone: +1 868-621-2002</p>
+        <p>Website: <a href="https://www.chaudrestaurant.com/">https://www.chaudrestaurant.com/</a></p>
+        <p>Opening Hours: Monday to Saturday from 11:30am to 10:00pm</p>
+        <p>&nbsp;</p>
+        <ol start="2">
+          <li>The Waterfront Restaurant - Scarborough, Tobago is an elegant seafood restaurant situated in the beautiful
+            island of Tobago. It boasts a stunning oceanfront location and serves a delectable selection of fresh
+            seafood and local cuisine.</li>
+        </ol>
+        <p>Address: Milford Rd &amp; Mt Marie Rd, Scarborough Tobago</p>
+        <p>Phone: +1 868-639-9970</p>
+        <p>Website: <a
+            href="https://www.waterfrontrestaurant-tobago.com/">https://www.waterfrontrestaurant-tobago.com/</a></p>
+        <p>Opening Hours: Daily from 11:00am to 10:00pm.</p>
+        <p>&nbsp;</p>
+        <ol start="3">
+          <li>Aioli Restaurant - Maraval, Trinidad is a charming French-inspired bistro located in Maraval, Trinidad. It
+            offers a cozy and romantic atmosphere, with an intimate indoor dining area and an outdoor patio. The
+            restaurant serves a delectable menu of French and Mediterranean cuisine.</li>
+        </ol>
+        <p>Address: MFGH+GF6, Ellerslie Plaza, Bossiere Village, Rapsey St, Port of Spain,</p>
+        <p>Phone: +1 868-387-7115</p>
+        <p>Website: <a href="https://www.aiolirestaurant.com/">https://www.aiolirestaurant.com/</a></p>
+        <p>Opening Hours: Tue to Sat from 11:00am - 10:00pm and on Sun from 10:00am - 3:00pm.</p>
+        <p>&nbsp;</p>
+        <ol start="4">
+          <li>Veni Mange is a vibrant and colorful Creole restaurant situated in the bustling neighborhood of Woodbrook,
+            Trinidad. It offers a delightful selection of local dishes, including curried crab and dumplings, callaloo,
+            and pelau.</li>
+        </ol>
+        <p>Address: 67A Ariapita Ave., Woodbrook, Trinidad and Tobago</p>
+        <p>Phone: +1 868-628-7486</p>
+        <p>Website: <a href="https://www.venimange.com/">https://www.venimange.com/</a></p>
+        <p>Opening Hours: Tue to Sat from 11:00am - 10:00pm and on Sundays from 11:00am - 7:00pm.</p>
+        <p>&nbsp;</p>
+        <ol start="5">
+          <li>The Seahorse Inn Restaurant is a charming and rustic restaurant located in the quaint fishing village of
+            Castara, Tobago. It offers a laid-back atmosphere and serves a mouth-watering selection of fresh seafood and
+            local cuisine.</li>
+        </ol>
+        <p>Address: Grafton Beach Road</p>
+        <p>Phone: +1 868-660-5621 / + 1 868-639-0686</p>
+        <p>Website: <a
+            href="https://seahorserestaurantandbar.godaddysites.com/">https://seahorserestaurantandbar.godaddysites.com/</a>
+        </p>
+        <p>Openin Hours: Daily 5:00pm - 10:00pm</p>
+        <p>&nbsp;</p>
+        <p>References:</p>
+        <ol>
+          <li>https://www.chaudrestaurant.com/</li>
+          <li>https://www.waterfrontrestaurant-tobago.com/</li>
+          <li>https://www.aiolirestaurant.com/</li>
+          <li>https://www.venimange.com/</li>
+          <li>https://seahorseinntobago.com/</li>
+        </ol>
+        <p>&nbsp;</p>
+        <p><strong>TURKS AND CAICOS</strong> is a beautiful island country located in the Caribbean region. It is
+          well-known for its pristine beaches, crystal-clear waters, and picturesque landscapes. The island is also home
+          to some of the best restaurants in the region, offering a variety of cuisines that cater to all tastes and
+          budgets. In this article, we will discuss some of the best restaurants in Turks and Caicos along with their
+          telephone numbers, websites, and opening hours.</p>
+        <p>&nbsp;</p>
+        <ol>
+          <li>Coco Bistro is one of the most popular restaurants in Turks and Caicos, offering a beautiful outdoor
+            dining experience amidst a tropical garden. The restaurant serves a variety of dishes made with fresh
+            ingredients, including seafood, steak, pasta, and vegetarian options. Their desserts are also highly
+            recommended.</li>
+        </ol>
+        <p>Address: Grace Bay Road, (next to Sunshine Nursery),</p>
+        <p>Telephone: +1 649-946-5369</p>
+        <p>Website: <a href="https://www.cocobistro.tc/">https://www.cocobistro.tc/</a></p>
+        <p>Opening Hours: Daily, 5:30pm - 10:00pm</p>
+        <p>&nbsp;</p>
+        <ol start="2">
+          <li>Infiniti Restaurant and Raw Bar located in the Grace Bay Club, Infiniti Restaurant andAdd Raw Bar is
+            another popular dining spot in Turks and Caicos. The restaurant features an open-air dining concept with
+            stunning views of the ocean. The menu offers a wide range of seafood and steak dishes along with an
+            extensive wine list. They also have a raw bar that serves fresh sushi and sashimi.</li>
+        </ol>
+        <p>Address: Grace Bay Circle Road Providenciales, Turks and Caicos Islands</p>
+        <p>Telephone: +1 649-946-5050</p>
+        <p>Website: <a
+            href="https://gracebayclub.gracebayresorts.com/infiniti-restaurant-raw-bar-menu/">https://www.gracebayresorts.com/infiniti-restaurant/</a>
+        </p>
+        <p>Opening Hours: Daily, 6:00pm - 10:00pm</p>
+        <p>&nbsp;</p>
+        <ol start="3">
+          <li>Da Conch Shack, If you're looking for a more casual dining experience, Da Conch Shack is the place to be.
+            Located on the beach, the restaurant serves delicious Caribbean-style seafood dishes made with fresh conch,
+            lobster, and fish. They also have a full bar that serves tropical drinks and beer. Live music is a regular
+            feature here, adding to the relaxed atmosphere.</li>
+        </ol>
+        <p>Address: Blue Hills Rd, TKCA 1ZZ, Turks &amp; Caicos Islands</p>
+        <p>Telephone: +1 649-946-8877</p>
+        <p>Website: <a href="http://www.daconchshack.com/">http://www.daconchshack.com/</a></p>
+        <p>Opening Hours: Daily, 11:00am - 10:00pm</p>
+        <p>&nbsp;</p>
+        <ol start="4">
+          <li>Le Bouchon du Village is a French-style bistro located in the heart of Grace Bay. The restaurant serves
+            authentic French cuisine, including escargots, foie gras, and steak frites. They also have an extensive wine
+            list featuring French wines. The restaurant's cozy atmosphere and friendly service make it a popular spot
+            among locals and tourists alike.</li>
+        </ol>
+        <p>&nbsp;</p>
+        <p>Address: Milford Rd &amp; Mt Marie Rd, Scarborough Tobago</p>
+        <p>Telephone: +1 649-941-4606</p>
+        <p>Website: <a href="https://lebouchonduvillage.com/">https://lebouchonduvillage.com/</a></p>
+        <p>Opening Hours: Daily, 5:30pm - 10:00pm</p>
+        <p>&nbsp;</p>
+        <p>References:</p>
+        <ol>
+          <li>https://www.visittci.com/providenciales/restaurants</li>
+          <li>
+            .https://theculturetrip.com/caribbean/turks-caicos-islands/articles/the-10-best-restaurants-in-turks-and-caicos/
+          </li>
+          </01>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+
+
+  </main>
+
+  <div class="footer-text">
+    Telephone (784) 492-2019 &emsp; <a href="mailto:tastecaribbeaninfo@gmail.com">Email:
+      tastecaribbeaninfo@gmail.com</a> &emsp; <a href="https://facebook.com">Facebook</a> &emsp; <a
+      href="https://instagram.com">Instagram</a> &emsp; <a href="https://twitter.com">Twitter</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+
+
+    </script>
+
+
+
+</body>
+
+</html>
